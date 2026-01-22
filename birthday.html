@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Himanshiii Birthday Special 🎂</title>
+<style>
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: Arial;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#yes {
+  background: green;
+  color: white;
+  position:absolute;
+  right:60%;
+}
+
+#no {
+  background: red;
+  color: white;
+  position: absolute;
+  left:60%;
+}
+</style>
+</head>
+<body>
+
+<h1>🎉 Goopiiii, Aaj tera birthday haina 🎂</h1><br>
+<h2>Kya tu cake treat degi? 😏</h2>
+<img src="please-cute.gif"
+width="260" style="border-radius:15px; margin-top:15px;"><br>
+<h2>Cake nahi toh Ek choti si Dairy Milk bhi chalegii 🤤</h2><br>
+<h2>Meh Apna Address deta hu 😋</h2>
+<br><br>
+
+<button id="yes" onclick="yesClick()">Haan 😇</button>
+<button id="no" onmouseover="moveNo()">Nahi 😈</button>
+
+<script>
+function yesClick()
+{
+  document.body.innerHTML = `
+  <h1>🥳 Happy Birthday Himanshiiii 🎂💖</h1><br>
+  <img src="cute-bear.gif"
+  width="260" style="border-radius:15px; margin-top:15px;"><br>
+  <h2>Cake ready rakhna 😎🍰</h2><br>
+  <h3>Sam Shiju,St Xavier's College Church,St Xavier College,Surajmal Zaveri Rd,Navrangpura,Ahmedabad,Gujarat</h3>
+  <h3>Phone No: 7230090072</h2><br>
+  <p>Special wishes from Sam Don (BCA WALA) 😏✨</p>
+`;
+}
+function moveNo() {
+  let x = Math.random() * (window.innerWidth - 120);
+  let y = Math.random() * (window.innerHeight - 60);
+  document.getElementById("no").style.left = x + "px";
+  document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
